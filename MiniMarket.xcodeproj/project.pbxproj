@@ -13,6 +13,10 @@
 		242FCD5E28F2C89700C0DE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242FCD5C28F2C89700C0DE5D /* Main.storyboard */; };
 		242FCD6028F2C89B00C0DE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242FCD5F28F2C89B00C0DE5D /* Assets.xcassets */; };
 		242FCD6328F2C89B00C0DE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242FCD6128F2C89B00C0DE5D /* LaunchScreen.storyboard */; };
+		2491812C28F5BFDC003AA905 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491812B28F5BFDC003AA905 /* Extensions.swift */; };
+		2491813228F5E17C003AA905 /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2491813128F5E17C003AA905 /* Gilroy-Semibold.ttf */; };
+		2491813428F60A9E003AA905 /* LoginTableViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491813328F60A9E003AA905 /* LoginTableViewHolder.swift */; };
+		2491813628F60AB3003AA905 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491813528F60AB3003AA905 /* LoginTableViewCell.swift */; };
 		24B30E0328F3FD9100D2BFF6 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24B30E0228F3FD9100D2BFF6 /* Inter-ExtraBold.ttf */; };
 		24B30E0728F4004A00D2BFF6 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24B30E0528F4004A00D2BFF6 /* Gilroy-Light.otf */; };
 		24B30E0828F4004A00D2BFF6 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24B30E0628F4004A00D2BFF6 /* Gilroy-ExtraBold.otf */; };
@@ -32,6 +36,10 @@
 		242FCD5F28F2C89B00C0DE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242FCD6228F2C89B00C0DE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		242FCD6428F2C89B00C0DE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2491812B28F5BFDC003AA905 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2491813128F5E17C003AA905 /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
+		2491813328F60A9E003AA905 /* LoginTableViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewHolder.swift; sourceTree = "<group>"; };
+		2491813528F60AB3003AA905 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		24B30E0228F3FD9100D2BFF6 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		24B30E0528F4004A00D2BFF6 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
 		24B30E0628F4004A00D2BFF6 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -83,6 +91,7 @@
 		242FCD6A28F2C98100C0DE5D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2491812A28F5BFC9003AA905 /* Extensions */,
 				24B30E0428F3FDA900D2BFF6 /* Fonts */,
 				242FCD5828F2C89700C0DE5D /* SceneDelegate.swift */,
 				242FCD5628F2C89700C0DE5D /* AppDelegate.swift */,
@@ -110,9 +119,18 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		2491812A28F5BFC9003AA905 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2491812B28F5BFDC003AA905 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		24B30E0428F3FDA900D2BFF6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2491813128F5E17C003AA905 /* Gilroy-Semibold.ttf */,
 				24B30E0628F4004A00D2BFF6 /* Gilroy-ExtraBold.otf */,
 				24B30E0528F4004A00D2BFF6 /* Gilroy-Light.otf */,
 				24B30E0228F3FD9100D2BFF6 /* Inter-ExtraBold.ttf */,
@@ -124,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				24B30E0E28F4282C00D2BFF6 /* LoginViewController.swift */,
+				2491813328F60A9E003AA905 /* LoginTableViewHolder.swift */,
+				2491813528F60AB3003AA905 /* LoginTableViewCell.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -195,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				242FCD6328F2C89B00C0DE5D /* LaunchScreen.storyboard in Resources */,
+				2491813228F5E17C003AA905 /* Gilroy-Semibold.ttf in Resources */,
 				242FCD6028F2C89B00C0DE5D /* Assets.xcassets in Resources */,
 				242FCD5E28F2C89700C0DE5D /* Main.storyboard in Resources */,
 				24B30E0728F4004A00D2BFF6 /* Gilroy-Light.otf in Resources */,
@@ -211,10 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2491812C28F5BFDC003AA905 /* Extensions.swift in Sources */,
 				242FCD5B28F2C89700C0DE5D /* OnBoardingViewController.swift in Sources */,
+				2491813628F60AB3003AA905 /* LoginTableViewCell.swift in Sources */,
 				242FCD5728F2C89700C0DE5D /* AppDelegate.swift in Sources */,
 				24B30E0F28F4282C00D2BFF6 /* LoginViewController.swift in Sources */,
 				242FCD5928F2C89700C0DE5D /* SceneDelegate.swift in Sources */,
+				2491813428F60A9E003AA905 /* LoginTableViewHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

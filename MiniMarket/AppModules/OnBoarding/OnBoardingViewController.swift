@@ -37,7 +37,7 @@ class OnBoardingViewController: UIViewController {
 //                """
 //            )
 //        }
-        label.font = UIFont(name: "Gilroy-ExtraBold", size: 48)
+        label.font = UIFont(name: "Gilroy-Semibold", size: 48)
         label.text = "Welcome \nto our store"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -48,7 +48,7 @@ class OnBoardingViewController: UIViewController {
     
     lazy var subtitle: UILabel = {
        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Medium", size: 20)
+        label.font = UIFont(name: "Gilroy-Semibold", size: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -67,7 +67,7 @@ class OnBoardingViewController: UIViewController {
         button.layer.borderColor = #colorLiteral(red: 0.3490196078, green: 0.3333333333, blue: 0.5450980392, alpha: 1).cgColor
         button.layer.masksToBounds = true
         button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 22)
+        button.titleLabel?.font = UIFont(name: "Gilroy-Semibold", size: 22)
         button.backgroundColor = #colorLiteral(red: 0.3490196078, green: 0.3333333333, blue: 0.5450980392, alpha: 1)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         return button
@@ -76,8 +76,8 @@ class OnBoardingViewController: UIViewController {
     @objc private func didTapButton(){
         let destinationVC = LoginViewController()
         destinationVC.modalPresentationStyle = .fullScreen
-        self.present(destinationVC, animated: true)
-//        self.navigationController?.pushViewController(destinationVC, animated: true)
+//        self.present(destinationVC, animated: true)
+        self.navigationController?.pushViewController(destinationVC, animated: true)
         
     }
     
@@ -95,7 +95,7 @@ class OnBoardingViewController: UIViewController {
         
         subtitle.topAnchor.constraint(equalTo: welcome.bottomAnchor, constant: 10).isActive = true
         subtitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-       
+        subtitle.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
         
         continueButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         continueButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-50).isActive = true
