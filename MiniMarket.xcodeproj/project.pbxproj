@@ -15,8 +15,8 @@
 		242FCD6328F2C89B00C0DE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242FCD6128F2C89B00C0DE5D /* LaunchScreen.storyboard */; };
 		2491812C28F5BFDC003AA905 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491812B28F5BFDC003AA905 /* Extensions.swift */; };
 		2491813228F5E17C003AA905 /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2491813128F5E17C003AA905 /* Gilroy-Semibold.ttf */; };
-		2491813428F60A9E003AA905 /* LoginTableViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491813328F60A9E003AA905 /* LoginTableViewHolder.swift */; };
-		2491813628F60AB3003AA905 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491813528F60AB3003AA905 /* LoginTableViewCell.swift */; };
+		2491813628F60AB3003AA905 /* InputFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491813528F60AB3003AA905 /* InputFieldViewCell.swift */; };
+		2491813828F7767B003AA905 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491813728F7767B003AA905 /* ButtonTableViewCell.swift */; };
 		24B30E0328F3FD9100D2BFF6 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24B30E0228F3FD9100D2BFF6 /* Inter-ExtraBold.ttf */; };
 		24B30E0728F4004A00D2BFF6 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24B30E0528F4004A00D2BFF6 /* Gilroy-Light.otf */; };
 		24B30E0828F4004A00D2BFF6 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24B30E0628F4004A00D2BFF6 /* Gilroy-ExtraBold.otf */; };
@@ -38,8 +38,8 @@
 		242FCD6428F2C89B00C0DE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2491812B28F5BFDC003AA905 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2491813128F5E17C003AA905 /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
-		2491813328F60A9E003AA905 /* LoginTableViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewHolder.swift; sourceTree = "<group>"; };
-		2491813528F60AB3003AA905 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		2491813528F60AB3003AA905 /* InputFieldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldViewCell.swift; sourceTree = "<group>"; };
+		2491813728F7767B003AA905 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		24B30E0228F3FD9100D2BFF6 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		24B30E0528F4004A00D2BFF6 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
 		24B30E0628F4004A00D2BFF6 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				24B30E0E28F4282C00D2BFF6 /* LoginViewController.swift */,
-				2491813328F60A9E003AA905 /* LoginTableViewHolder.swift */,
-				2491813528F60AB3003AA905 /* LoginTableViewCell.swift */,
+				2491813528F60AB3003AA905 /* InputFieldViewCell.swift */,
+				2491813728F7767B003AA905 /* ButtonTableViewCell.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -234,11 +234,11 @@
 			files = (
 				2491812C28F5BFDC003AA905 /* Extensions.swift in Sources */,
 				242FCD5B28F2C89700C0DE5D /* OnBoardingViewController.swift in Sources */,
-				2491813628F60AB3003AA905 /* LoginTableViewCell.swift in Sources */,
+				2491813628F60AB3003AA905 /* InputFieldViewCell.swift in Sources */,
 				242FCD5728F2C89700C0DE5D /* AppDelegate.swift in Sources */,
 				24B30E0F28F4282C00D2BFF6 /* LoginViewController.swift in Sources */,
+				2491813828F7767B003AA905 /* ButtonTableViewCell.swift in Sources */,
 				242FCD5928F2C89700C0DE5D /* SceneDelegate.swift in Sources */,
-				2491813428F60A9E003AA905 /* LoginTableViewHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
