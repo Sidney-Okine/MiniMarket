@@ -11,6 +11,7 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
     let inputFieldViewCell = InputFieldViewCell()
+    let buttonCell = ButtonTableViewCell()
     
     lazy var bannerImage: UIImageView = {
         let imageview = UIImageView()
@@ -36,6 +37,7 @@ class LoginViewController: UIViewController {
         table.dataSource = self
         table.translatesAutoresizingMaskIntoConstraints = false
         table.register(InputFieldViewCell.self, forCellReuseIdentifier: "input")
+        table.register(ButtonTableViewCell.self, forCellReuseIdentifier: "button")
         table.allowsSelection = false
         table.isScrollEnabled = true
         table.showsVerticalScrollIndicator = false
@@ -78,14 +80,27 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "input", for: indexPath) as! InputFieldViewCell
-        cell.contentView.backgroundColor = .clear
-        return cell
+        switch(indexPath.section){
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "input", for: indexPath) as! InputFieldViewCell
+                   cell.contentView.backgroundColor = .clear
+                   return cell
+            
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "button", for: indexPath) as! ButtonTableViewCell
+                   cell.contentView.backgroundColor = .clear
+            return cell
+        }
         
     }
     
