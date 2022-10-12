@@ -98,7 +98,6 @@ class OnBoardingViewController: UIViewController {
         subtitle.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
         
         continueButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        continueButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-50).isActive = true
         continueButton.topAnchor.constraint(equalTo: subtitle.bottomAnchor, constant: 40).isActive = true
         continueButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 22).isActive = true
         continueButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -22).isActive = true
