@@ -40,7 +40,7 @@ class ButtonTableViewCell: UITableViewCell {
     }
     func setupConstraints(){
         continueButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0).isActive = true
-        continueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        continueButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         continueButton.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 22).isActive = true
         continueButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -22).isActive = true
 
