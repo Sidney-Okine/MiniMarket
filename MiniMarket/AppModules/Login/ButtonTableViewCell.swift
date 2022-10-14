@@ -21,9 +21,14 @@ class ButtonTableViewCell: UITableViewCell {
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont(name: "Gilroy-Semibold", size: 22)
         button.backgroundColor = #colorLiteral(red: 0.3490196078, green: 0.3333333333, blue: 0.5450980392, alpha: 1)
-        
+        button.addTarget(self, action: #selector(onClickButton), for: .touchUpInside)
+
         return button
     }()
+    @objc private func onClickButton(){
+        
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(continueButton)
